@@ -1,5 +1,6 @@
 ![SQL_Graphic](SQL_Graphic.jpg)
-Image Source: [PPT - SQL FUNCTIONS PowerPoint Presentation, free download - ID:6296690 (slideserve.com)]
+
+_Image Source: [PPT - SQL FUNCTIONS PowerPoint Presentation, free download - ID:6296690 (slideserve.com)]_
 
 # Assignment 07 - Functions
 
