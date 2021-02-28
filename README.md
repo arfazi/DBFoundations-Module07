@@ -40,11 +40,11 @@ This page discussed when to use a user defined function (UDF) and the difference
 
 
 ***************************************************************************************************************************************************
-_ARFAZI is new to Github and using the site for SQL and Python classes.
+:woman_student:_ARFAZI is new to Github and using the site for SQL and Python classes.
 She lives in Seattle and hopes at least one graduate school admits her
 this year so she can escape aerospace hell and become a Data Scientist 
 one day._
-:woman_student:
+
 
 
 
