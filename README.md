@@ -1,4 +1,4 @@
-![SQL_Graphic](src)
+![SQL_Graphic](/SQL_Graphic.jpeg)
 
 
 # Assignment 07 - Functions
@@ -28,7 +28,7 @@ Their differences are discussed below:
 The basic syntax for user defined functions are shown in Figure 1 below:
 
 ```markdown
-![Syntax](src)
+![Syntax](/Syntax.jpg)
 ```
 _Figure 1. Basic Syntax of Scalar, In-Line Table, and Multi-Statement Table Functions 
 (Source: [UDF Syntax | SQL Server User-Defined Functions (UDFs) | InformIT](url) 
