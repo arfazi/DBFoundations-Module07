@@ -5,7 +5,7 @@
 
 ## IT FDN 130 A Wi 21: Foundations of Databases & SQL Programming
 
-### Introduction
+### INTRODUCTION
 
 The seventh module of this course discussed SQL Functions in greater depth.  A function is a predefined formula which takes one or more arguments as input, processes the arguments, and then returns an output (Source: [SQL functions and references - w3resource)](url).  This page will discuss when to use a user defined function and the differences between Scalar, Inline, and Multi-Statement Functions.
 
@@ -36,20 +36,13 @@ _Figure 1. Basic Syntax of Scalar, In-Line Table, and Multi-Statement Table Func
 
 This page discussed when to use a user defined function (UDF) and the differences between Scalar, In-Line, and Multi-Statement functions.  Functions can be very useful to capture and reuse common business logic but may or may not be a better choice to replace a View or a Stored Procedure.  Of the three types of functions, the scalar function appears to provide the most useful functionality, but the functionality required for a given operation will best determine if a function is the best choice for the application.   
 
-# Header 1
-## Header 2
-### Header 3
+### ARFAZI is new to Github and using the site for SQL and Python classes.
+### She lives in Seattle and hopes at least one graduate school admits her
+## so she can become a Data Scientist one day. :woman_student: 
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
 
 
 
