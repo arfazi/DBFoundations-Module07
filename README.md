@@ -1,4 +1,4 @@
-![SQL_Graphic](/SQL_Graphic.jpeg)
+![SQL_Graphic](SQL_Graphic.jpg)
 
 
 # Assignment 07 - Functions
@@ -28,7 +28,7 @@ Their differences are discussed below:
 The basic syntax for user defined functions are shown in Figure 1 below:
 
 ```markdown
-![Syntax](/Syntax.jpg)
+![Syntax](Syntax.jpg)
 ```
 _Figure 1. Basic Syntax of Scalar, In-Line Table, and Multi-Statement Table Functions 
 (Source: [UDF Syntax | SQL Server User-Defined Functions (UDFs) | InformIT](url) 
@@ -40,7 +40,7 @@ This page discussed when to use a user defined function (UDF) and the difference
 
 _ARFAZI is new to Github and using the site for SQL and Python classes.
 She lives in Seattle and hopes at least one graduate school admits her
-so she can become a Data Scientist one day_ :woman_student: 
+so she can become a Data Scientist one day._
 
 
 
