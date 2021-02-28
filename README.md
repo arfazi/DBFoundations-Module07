@@ -1,5 +1,5 @@
 ![SQL_Graphic](SQL_Graphic.jpg)
-
+Image Source: [PPT - SQL FUNCTIONS PowerPoint Presentation, free download - ID:6296690 (slideserve.com)]
 
 # Assignment 07 - Functions
 
@@ -31,8 +31,7 @@ The basic syntax for user defined functions are shown in Figure 1 below:
 ![Syntax](Syntax.jpg)
 
 _Figure 1. Basic Syntax of Scalar, In-Line Table, and Multi-Statement Table Functions 
-(Source: [UDF Syntax | SQL Server User-Defined Functions (UDFs) | InformIT](url) 
-(Links to External Site)_
+(Source: [UDF Syntax | SQL Server User-Defined Functions (UDFs) | InformIT](url)_
 
 ### CONCLUSION
 
@@ -42,7 +41,8 @@ This page discussed when to use a user defined function (UDF) and the difference
 ***************************************************************************************************************************************************
 _ARFAZI is new to Github and using the site for SQL and Python classes.
 She lives in Seattle and hopes at least one graduate school admits her
-so she can become a Data Scientist one day._
+this year so she can escape aerospace hell and become a Data Scientist 
+one day._
 
 
 
