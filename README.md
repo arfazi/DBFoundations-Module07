@@ -29,16 +29,18 @@ The basic syntax for user defined functions are shown in Figure 1 below:
 
 ```markdown
 ![Syntax](src)
-_Figure 1. Basic Syntax of Scalar, In-Line Table, and Multi-Statement Table Functions (Source: [UDF Syntax | SQL Server User-Defined Functions (UDFs) | InformIT](url) (Links to External Site)_
 ```
+_Figure 1. Basic Syntax of Scalar, In-Line Table, and Multi-Statement Table Functions 
+(Source: [UDF Syntax | SQL Server User-Defined Functions (UDFs) | InformIT](url) 
+(Links to External Site)_
 
 ### CONCLUSION
 
 This page discussed when to use a user defined function (UDF) and the differences between Scalar, In-Line, and Multi-Statement functions.  Functions can be very useful to capture and reuse common business logic but may or may not be a better choice to replace a View or a Stored Procedure.  Of the three types of functions, the scalar function appears to provide the most useful functionality, but the functionality required for a given operation will best determine if a function is the best choice for the application.   
 
-### ARFAZI is new to Github and using the site for SQL and Python classes.
-### She lives in Seattle and hopes at least one graduate school admits her
-## so she can become a Data Scientist one day. :woman_student: 
+_ARFAZI is new to Github and using the site for SQL and Python classes.
+She lives in Seattle and hopes at least one graduate school admits her
+so she can become a Data Scientist one day_ :woman_student: 
 
 
 
