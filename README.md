@@ -1,6 +1,6 @@
 ![SQL_Graphic](SQL_Graphic.jpg)
 
-_Image Source: [PPT - SQL FUNCTIONS PowerPoint Presentation, free download - ID:6296690 (slideserve.com)]_
+_Image Source: [PPT - SQL FUNCTIONS PowerPoint Presentation, free download - ID:6296690 (slideserve.com)](url)_
 
 # Assignment 07 - Functions
 
@@ -44,6 +44,7 @@ _ARFAZI is new to Github and using the site for SQL and Python classes.
 She lives in Seattle and hopes at least one graduate school admits her
 this year so she can escape aerospace hell and become a Data Scientist 
 one day._
+:woman_student:
 
 
 
