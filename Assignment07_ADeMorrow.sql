@@ -2,7 +2,11 @@
 -- Title: Assignment07
 -- Author: AmyDeMorrow
 -- Desc: This file demonstrates how to use Functions
--- Change Log: When,Who,What
+-- Change Log:
+-- 2021-03-03 - Revised Q8 to place Order By clause inside the function, and
+--              fixed the template comment typo creating a compiling error
+-- 2021-02-26 - Answered final three questions
+-- 2021-02-25 - Answered first five questions
 -- 2021-02-25,AmyDeMorrow,Created File
 --**************************************************************************--
 Begin Try
@@ -182,10 +186,10 @@ Select * From vInventories;
 go
 
 /********************************* Questions and Answers *********************************/
-'NOTES------------------------------------------------------------------------------------ 
- 1) You must use the BASIC views for each table.
- 2) Remember that Inventory Counts are Randomly Generated. So, your counts may not match mine
- 3) To make sure the Dates are sorted correctly, you can use Functions in the Order By clause!
+--NOTES------------------------------------------------------------------------------------ 
+ --1) You must use the BASIC views for each table.
+ --2) Remember that Inventory Counts are Randomly Generated. So, your counts may not match mine
+ --3) To make sure the Dates are sorted correctly, you can use Functions in the Order By clause!
 ------------------------------------------------------------------------------------------'
 -- Question 1 (5% of pts): What built-in SQL Server function can you use to show a list 
 -- of Product names, and the price of each product, with the price formatted as US dollars?
@@ -339,7 +343,7 @@ Returns Table
 As
 Return
 (
-	Select
+	Select Top 100 Percent
 	ProductName
     ,[InventoryDate]
     ,[InventoryCount]
@@ -347,39 +351,28 @@ Return
     ,[CountVsPreviousCountKPI]
 	From vProductInventoriesWithPreviousMonthCountsWithKPIs
 	Where [CountVsPreviousCountKPI] = @KPI
+	Order By Year(Cast(InventoryDate as Date))
 );
 go
 
 -- Check that it works:
-Select * From fProductInventoriesWithPreviousMonthCountsWithKPIs(1)
-  Order By Year(Cast(InventoryDate as Date));
+Select * From fProductInventoriesWithPreviousMonthCountsWithKPIs(1);
 go
 
-Select * From fProductInventoriesWithPreviousMonthCountsWithKPIs(0)
-  Order By Year(Cast(InventoryDate as Date));
+Select * From fProductInventoriesWithPreviousMonthCountsWithKPIs(0);
 go
 
-Select * From fProductInventoriesWithPreviousMonthCountsWithKPIs(-1)
-  Order By Year(Cast(InventoryDate as Date));
+Select * From fProductInventoriesWithPreviousMonthCountsWithKPIs(-1);
 go
 
--- First, I had to nuke the "v1." because it had no meaning in my database.
--- And I didn't bother to go back as add it to renane a View because I already 
--- knew I'd written all my earlier code to sort on month, and since all the data 
--- is for 2017, it wouldn't change anything.
--- Second, placing an "order by" inside a function was highly discoraged, and 
--- threw an error when attempted, so it got placed in the outside select statement
--- where it belongs.
--- I added it to my Select statements just in case, and tried it out.
--- But like I anticipated, it did nothing.
--- I toyed with going back and rewriting my earlier Views to make the code
--- work, but just the fact that it asked me to run a "v1." made me figure this was
--- left over from some earlier version of the assignment that was taken out, and it
--- was just a typo anyway. If not, the point of this exercise was to throw 
--- an error, so I left everything alone.
--- But yes, casting the string date back into a date type *might* have altered
--- my tables if I'd written earlier code differently. If anything, it points out 
--- a pitfall with relying too much on narrow scope View calls written around tight 
--- data sets and realizing you can't broaden the scope downstream.
+-- Ok, I rewrote the function to put "Order By" inside the function with
+-- that little "Top 100 Percent" trick.  I'd prefer it stay outside the
+-- function, but it meets the criteria.
+-- Casting the string date back into a date type *might* have altered
+-- my tables -- if I'd written earlier code differently. As it stands, I
+-- wrote my earlier views to order on month, and casting back into Year won't
+-- do alter anything on a data set containing a single year. If anything, 
+-- this points out a pitfall with relying too much on narrow scope View calls 
+-- written around tight data sets and realizing you can't broaden the scope downstream.
 
 /***************************************************************************************/
